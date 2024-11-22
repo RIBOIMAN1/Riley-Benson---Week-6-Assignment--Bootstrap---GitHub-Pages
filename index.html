@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body class="bg-dark"> <!-- Body element with the "bg-dark" class for a dark gray background, all coming from Bootstrap -->
 	<div id="header-container">
 		<div>
 			<header>
@@ -19,9 +19,9 @@
 			</header>
 		</div>
 	</div>
-	<div id="main-container">
-		<div>
-			<nav class="col-3 bg-light"> <!-- Nav element with the "col-3" class for a width of 25% and "bg-light" for a light gray background, all coming from Bootstrap -->
+	<div id="main-container" class="container-fluid"> <!-- Div element with the "container-fluid" class for a full-width container, all coming from Bootstrap -->
+		<div class="row"> <!-- Div element with the "row" class for a horizontal layout, all coming from Bootstrap -->
+			<nav class="col-3 bg-success"> <!-- Nav element with the "col-3" class for a width of 25% and "bg-success" for a green background, all coming from Bootstrap -->
 				<ul>
 					<li><a href="#automotive">Automotive</a></li>
 					<li><a href="#maritime">Maritime</a></li>
@@ -158,7 +158,7 @@
 					</ul>
 				</section>
 			</main>
-			<aside>
+			<aside class="col-3 bg-success"> <!-- Aside element with the "col-3" class for a width of 25% and "bg-success" for a green background, all coming from Bootstrap -->
 				<h2>Additional Notes</h2>
 				<p>Some other interesting and similar links around the web:</p>
 				<ul>
@@ -173,7 +173,7 @@
 	</div>
 	<div id="footer-container">
 		<div>
-			<footer>
+			<footer class="navbar bg-dark text-white text-center d-flex justify-content-center"> <!-- Footer element with the "navbar" class for better responsiveness, "bg-dark" for a dark gray background, the "text-white" class for white text color, the "d-flex" class for flexbox layout, and the "justify-content-center" class to align the text to the center both horizontally and vertically, all coming from Bootstrap -->
 				&copy; Copyright 2019
 			</footer>
 		</div>
